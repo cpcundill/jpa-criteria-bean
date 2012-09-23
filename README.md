@@ -1,17 +1,10 @@
-jpa-criteria-bean
+JPACriteria Bean
 =================
-
-A library to make search queries with JPA simple by using an annotated bean holding filter criteria to instruct a query builder.  Uses convention over configuration.  Should allow for queries which join to other entities.
-
-Criteria Bean Notes
-----------------------
 
 ### Objective
 
-Make a search query with JPA simple using a bean holding filter criteria defined via annotations to instruct a query builder.  
-Use convention over configuration.  Allow for queries which join to other entities.
+Make a search query with JPA simple by using a bean holding filter criteria defined via annotations to instruct a query builder. Use convention over configuration.  Allow for queries which join to other entities.
 	
-
 ### Examples
 
 #### Example 1
