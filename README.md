@@ -12,7 +12,6 @@ Make a search query with JPA simple by using a bean holding filter criteria defi
 To generate a query like the following:
 
 		SELECT u FROM User u 
-		INNER JOIN u.roles r
 		WHERE u.active = true
 		ORDER BY u.username;	
 
@@ -43,9 +42,7 @@ A more complex example:
 		ORDER BY c.lastname, c.firstname;
 
 ...achieved like so:
-Consructed with a @CriteriaBean and an EntityManager 
-getCountQuery() - returns a Query which can be executed to return the count of all records matching the filter criteria
-getQuery() - returns a Query which can be executed to return records (in object form) matching the filter criteria 
+ 
 		@CriteriaBean(type = Order.class)
 		public class CustomerFilter {
 	
@@ -142,6 +139,7 @@ Params
 ####	Query builder
 		
 Consructed with a @CriteriaBean and an EntityManager 
+
 getCountQuery() - returns a Query which can be executed to return the count of all records matching the filter criteria
 getQuery() - returns a Query which can be executed to return records (in object form) matching the filter criteria 
 
